@@ -12,10 +12,10 @@ namespace GameUnits
             string mMov = mU.Move();
             string sMov = sU.Move();
 
-            Console.WriteLine(
-                $"{mU.GetType()}: Health - {mU.Health}, Value - {mU.Value}");
-            Console.WriteLine(
-                $"{sU.GetType()}: Health - {sU.Health}, Value - {sU.Value}");
+            Console.WriteLine($"{mU.GetType()} \n{mU.ToString()}");
+            Console.WriteLine("");
+            Console.WriteLine($"{sU.GetType()} \n{sU.ToString()}");
+            Console.WriteLine("");
             Console.WriteLine(mMov);
             Console.WriteLine(sMov);
         }
