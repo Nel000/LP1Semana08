@@ -15,5 +15,8 @@ namespace GameUnits
         }
         
         public abstract string Move();
+
+        public override string ToString() => 
+            $"Health - {Health}, \nValue - {Value}";
     }
 }

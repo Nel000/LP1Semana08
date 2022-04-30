@@ -25,5 +25,8 @@ namespace GameUnits
         {
             return $"{this.GetType()} Moved {movement} units";
         }
+
+        public override string ToString() => 
+            base.ToString + $"\nAttack power - {AttackPower}, XP - {XP}";
     }
 }
