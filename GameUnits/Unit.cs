@@ -1,7 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace GameUnits
 {
@@ -17,9 +14,6 @@ namespace GameUnits
             Health = health;
         }
         
-        public void Move(Vector2 v) 
-        {
-            Console.WriteLine($"Moved {Value} units");
-        }
+        public abstract string Move();
     }
 }

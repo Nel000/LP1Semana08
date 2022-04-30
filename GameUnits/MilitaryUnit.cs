@@ -7,7 +7,8 @@ namespace GameUnits
 {
     public class MilitaryUnit : Unit
     {
-        public override int Health { get; set => base.Health + XP; }
+        private int movement;
+        public override int Health { get => base.Health + XP; }
         public int AttackPower { get; }
         public int XP { get; set; }
         public override float Value { get => AttackPower + XP; }
@@ -17,11 +18,12 @@ namespace GameUnits
         {
             AttackPower = attackPower;
             XP = 0;
+            movement = mov;
         }
 
-        public void Attack(Unit u)
+        public override string Move()
         {
-
+            return $"{this.GetType()} Moved {movement} units";
         }
     }
 }
