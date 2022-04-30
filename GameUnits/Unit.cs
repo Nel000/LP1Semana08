@@ -5,10 +5,11 @@ using System.Threading.Tasks;
 
 namespace GameUnits
 {
-    public class Unit
+    public abstract class Unit
     {
         private int movement;
-        public int Health { get; set; }
+        public virtual int Health { get; set; }
+        public abstract float Value { get; }
 
         public Unit(int movement, int health)
         {
@@ -18,7 +19,7 @@ namespace GameUnits
         
         public void Move(Vector2 v) 
         {
-            Console.WriteLine($"Moved {movement} units");
+            Console.WriteLine($"Moved {Value} units");
         }
     }
 }
