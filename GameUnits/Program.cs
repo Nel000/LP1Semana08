@@ -18,6 +18,8 @@ namespace GameUnits
             Console.WriteLine("");
             Console.WriteLine(mMov);
             Console.WriteLine(sMov);
+
+            Console.WriteLine("Testing git tag manipulation");
         }
     }
 }
